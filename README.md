@@ -13,3 +13,4 @@ Buka index.html di browser, atau:
 ## Kustomisasi
 
 Edit assets/js/config.js untuk ubah nama, warna, teks, background, dan profil.
+# RiiwwxzLouiseTheme
