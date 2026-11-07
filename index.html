@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RiiwwxzLouise Panel</title>
+<link rel="stylesheet" href="assets/css/neon-abyss.css">
+</head>
+<body>
+<!-- Canvas untuk Efek Meteor -->
+<canvas id="meteor-canvas"></canvas>
+
+<div id="app">
+  <div class="container">
+
+    <header class="topbar">
+      <div class="brand">
+        <h1 id="panel-name">Neon Abyss Panel</h1>
+        <p class="sub" id="panel-subtitle">Pratinjau tema</p>
+      </div>
+      
+      <div class="topbar-actions">
+        <!-- Tombol SFX & Tema -->
+        <button class="icon-btn" id="btn-theme" title="Ganti Tema">🌓</button>
+        <button class="icon-btn" id="btn-sfx" title="Suara On/Off">🔊</button>
+        <button class="icon-btn" id="btn-settings" title="Pengaturan">⚙️</button>
+        
+        <div class="user-chip" id="user-chip">
+          <img id="avatar-img" src="" alt="avatar">
+          <span id="user-name">User</span>
+        </div>
+      </div>
+    </header>
+
+    <p class="welcome" id="welcome-text"></p>
+
+    <!-- Widget Status Server -->
+    <div class="stats-widget">
+      <div class="stat-box">
+        <span>CPU Usage</span>
+        <div class="progress-bar"><div class="progress-fill" id="cpu-bar"></div></div>
+        <span id="cpu-text">0%</span>
+      </div>
+      <div class="stat-box">
+        <span>RAM Usage</span>
+        <div class="progress-bar"><div class="progress-fill" id="ram-bar"></div></div>
+        <span id="ram-text">0%</span>
+      </div>
+      <div class="stat-box">
+        <span>Uptime</span>
+        <strong id="uptime-text">00:00:00</strong>
+      </div>
+    </div>
+
+    <div class="server-grid" id="server-list"></div>
+
+    <div class="profile-card">
+      <h2 id="profile-title">Profil</h2>
+      <div class="profile-body">
+        <img id="profile-avatar" src="" alt="avatar">
+        <div>
+          <strong id="profile-name"></strong>
+          <p id="profile-role"></p>
+          <p id="profile-bio" class="bio"></p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="theme-credit" id="credit-footer"></footer>
+  </div>
+</div>
+
+<!-- Modal Pengaturan -->
+<div class="modal-overlay" id="settings-modal">
+  <div class="modal-content">
+    <h2>⚙️ Pengaturan Tema</h2>
+    
+    <label>Warna Utama (Neon)</label>
+    <input type="color" id="input-color" value="#00f5ff">
+    
+    <label>Efek Meteor / Partikel</label>
+    <select id="input-meteor">
+      <option value="on">Aktif (Keren)</option>
+      <option value="off">Mati (Hemat Baterai)</option>
+    </select>
+
+    <label>Nama Profil</label>
+    <input type="text" id="input-name" placeholder="Masukkan nama...">
+
+    <div class="modal-actions">
+      <button class="btn" id="btn-save">Simpan</button>
+      <button class="btn btn-outline" id="btn-close">Tutup</button>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/apply.js"></script>
+</body>
+</html>
