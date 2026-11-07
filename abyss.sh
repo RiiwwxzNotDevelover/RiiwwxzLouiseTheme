@@ -43,7 +43,7 @@ cp resources/scripts/index.tsx resources/scripts/index.tsx.bak
 # 4. Unduh file CSS dari GitHub kamu
 echo -e "${CYAN}[2/5] Mengunduh file tema dari GitHub...${NC}"
 # PERHATIAN: Ganti URL di bawah dengan URL raw GitHub kamu yang benar
-CSS_URL="https://raw.githubusercontent.com/riiwwxzofficial/NeonAbyssTheme/main/assets/css/style.css"
+CSS_URL="https://raw.githubusercontent.com/RiiwwxzNotDevelover/RiiwwxzLouiseTheme/main/assets/css/style.css"
 curl -sL "$CSS_URL" -o resources/scripts/neon-abyss.css
 
 if [ ! -s resources/scripts/neon-abyss.css ]; then
